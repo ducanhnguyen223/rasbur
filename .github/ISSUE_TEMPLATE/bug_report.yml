@@ -1,0 +1,55 @@
+name: Bug report
+description: Something behaves differently from what you expected.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For security problems, do not use this form. See SECURITY.md.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where
+      options:
+        - "@rasbur/decoders"
+        - "@rasbur/mcp"
+        - Web app or demo
+        - API
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: How to reproduce
+      description: The input string, or the smallest set of steps that shows the problem. Never paste a real token or key; encode a made-up value instead.
+      placeholder: |
+        Input: 01001000 01101001
+        Expected: Binary, "Hi"
+        Actual: Hash, "CRC16"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      description: The package version, or the commit SHA you are running.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: Node 20.19, Linux, Chrome 142
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Relevant output. Remove anything secret before pasting.
+      render: shell

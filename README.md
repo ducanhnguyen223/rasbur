@@ -137,6 +137,11 @@ If you only need decoding in your own code, use `@rasbur/decoders` rather than t
 TypeScript, Turborepo, React 19, Vite, Tailwind CSS, Express, Socket.IO, MongoDB, Redis,
 Zod, Vitest and Playwright.
 
+## Contributing
+
+Contributions are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) to get started, and
+[SECURITY.md](SECURITY.md) to report a vulnerability.
+
 ## License
 
 MIT. Copyright Omansh Choudhary. See [LICENSE](LICENSE).
